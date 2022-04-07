@@ -1,0 +1,17 @@
+name: 'JIRA get issue key'
+description: 'Find JIRA issue key from a given input string'
+inputs:
+  search:
+    description: 'What do you want to search?'
+    required: true
+    default: ''
+outputs:
+  exists:
+    description: 'match found boolean'
+  key:
+    description: 'JIRA issue key'
+  keys:
+    description: 'JIRA issue keys'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

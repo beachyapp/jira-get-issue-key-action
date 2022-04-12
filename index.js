@@ -15,7 +15,7 @@ try {
   keys=[...new Set(keys)];
 
   // if no match found
-  exists=(keys !== null)
+  exists=keys.length>0
 
   // get first element if match found
   key=exists?keys[0]:''

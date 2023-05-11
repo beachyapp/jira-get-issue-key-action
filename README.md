@@ -27,7 +27,7 @@ JIRA issue keys
 ```
 - name: Get JIRA tickets
   id: jira
-  uses: beachyapp/jira-get-issue-key-action@v0.1
+  uses: beachyapp/jira-get-issue-key-action@v0.2
   with:
     search: ${{ github.event.pull_request.head.ref }}
 - name: output
